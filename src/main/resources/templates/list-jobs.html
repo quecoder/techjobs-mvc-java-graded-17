@@ -11,10 +11,10 @@
   <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
-  <table th:each="job : ${jobs}" class= "job-listing-container">
+  <table th:each="job : ${jobs}" class= "job-listing-container"> // thymeleaf lang, creating table, iterating "job" through jobs list, then apply CSS class "job-listing container"
     <tr>
       <th scope="row">ID</th>
-      <td th:text="${job.id}"></td>
+      <td th:text="${job.id}"></td> // table header, not a column
     </tr>
     <tr>
       <th>Job Name</th>
